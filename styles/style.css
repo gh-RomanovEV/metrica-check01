@@ -31,8 +31,7 @@ a {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   object-fit: cover;
   vertical-align: top;
 }
@@ -53,10 +52,10 @@ button {
 }
 
 .hero {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
-.title {
+.hero__title {
   max-width: 950px;
   margin-bottom: 30px;
   font-size: 60px;
@@ -64,17 +63,18 @@ button {
 }
 
 .hero__content {
-  width: 1150px;
+  position: relative;
   height: 500px;
-  padding-top: 379px;
-  padding-left: 40px;
   background-image: url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-position: 50%;
+  background-size: cover;
 }
 
 .hero__text {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
   max-width: 430px;
   font-size: 20px;
   line-height: 27px;
@@ -82,7 +82,7 @@ button {
 }
 
 .about {
-  padding-bottom: 150px;
+  padding: 50px 0 100px;
 }
 
 .about__title {
@@ -91,10 +91,11 @@ button {
 }
 
 .about__content {
-  max-width: 1050px;
+  height: 100%;
 }
 
 .about__text {
+  max-width: 1050px;
   margin-bottom: 30px;
   font-size: 45px;
   line-height: 61px;
